@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <form action="" class="p-5 border-8 border-amber-50 rounded-lg shadow-md w-2/3 mx-auto mt-10">
+        <h1 class="text-2xl font-bold mb-4 text-center">Password Generator</h1>
+
+        <div class="form-group text-center">
+            <label class="block my-3" for="password">Your Password</label>
+            <input type="text" class="text-black p-2 border-4 border-green-900 rounded-3xl mx-auto block" id="input" readonly>
+        </div>
+
+        <div class="form-criteria">
+            <input type="checkbox" class = "criteria options" name="Uppercase">
+            <label for="length">Uppercase</label><br>
+            <input type="checkbox" class = "criteria options" name="Lowercase">
+            <label for="length">Lowercase</label><br>
+            <input type="checkbox" class = "criteria options" name="Number">
+            <label for="length">Number</label><br>
+            <input type="checkbox" class = "criteria options" name="Symbol">
+            <label for="length">Symbol</label><br>
+            <input type="number" id="length" class = "options border-4 border-green-900 rounded-3xl px-4 py-2 text-black" name="length" placeholder="Length of password"><br>
+        </div>
+        <button id="generate" class="bg-green-800 text-white px-6 py-2 rounded mx-auto block mt-4">Generate</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
